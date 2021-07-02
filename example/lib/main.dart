@@ -51,7 +51,6 @@ class _SimpleCardDemoState extends State<SimpleCardDemo> {
             model: _cardModel,
           ),
         )
-        // bottomSheet: SlideUpBar(),
         );
   }
 }
@@ -82,24 +81,39 @@ class _FullyCustomizedCardsState extends State<FullyCustomizedCards> {
         ),
         body: Center(
           child: FlutterAnimatedCards(
-            list: _cardList, // required
-            model: _cardModel, // required
-            cardWithSingleColor: Color(0xffdee5cf), // either use this one
+            /// required
+            list: _cardList,
+
+            /// required
+            model: _cardModel,
+
+            /// either use this one
+            cardWithSingleColor: Color(0xffdee5cf),
+
+            /// or this one
             cardWithGradientColors: [
-              Color(0xfffff060), // or this one
+              Color(0xfffff060),
               Color(0xFFD5D2D2),
               Color(0xFFfbc7d4)
             ],
-            isRotatingCards: true, // set it false if you don't want 3D rotation
-            cardHeight: 200, // change it according to your design
-            cardWidth: 170, // change it according to your design
+
+            /// set it false if you don't want 3D rotation
+            isRotatingCards: true,
+
+            /// change it according to your design
+            cardHeight: 200,
+
+            /// change it according to your design
+            cardWidth: 170,
+
             moreText: 'Set any text here',
             onMoreBtnPressed: () {
-              // write a code that takes you to the detail page of this card
+              /// write a code that takes you to the detail page of this card
             },
           ),
         )
-        // bottomSheet: SlideUpBar(),
+
+        /// bottomSheet: SlideUpBar(),
         );
   }
 }
