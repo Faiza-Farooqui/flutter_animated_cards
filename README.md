@@ -36,9 +36,29 @@ class CardModel {
 #### `FlutterAnimatedCards` made through model class
 If you add Color parameter in your model class and assign each list item a new different color then your widget look like this.
 
- Animated Cards           |             
-:-------------------------:
-<img height="380px" src="https://user-images.githubusercontent.com/36657067/123776333-a2300380-d8e8-11eb-801a-6c4cd179bea3.gif?raw=true">
+Cards with ModelColor       |  Cards with Model Gradient         
+:-------------------------:|:-----------------------------:
+<img height="380px" src="https://user-images.githubusercontent.com/36657067/123776333-a2300380-d8e8-11eb-801a-6c4cd179bea3.gif?raw=true">|<img height="380px" src="https://user-images.githubusercontent.com/36657067/124254739-cb4bd080-db42-11eb-910b-37c1776d2f5e.gif?raw=true">
+
+```python
+1-
+   CardModel(
+           title: 'Colors, Vibrant',
+           description:'Gardening is how I relax. It\'s another form of creating and playing with colors.',
+           color: Color(0xfff9d9e2),  // add color of your choice, add different colors in every list item
+           imagePath: "assets/images/colors.png"),
+
+2- 
+   CardModel(
+          title: 'Budapest, Hungary',
+          description:'Meet the CardModel with rich history and indescribable culture',
+          colorList: [Color(0xFF4CAF50),  // add gradient of your choice, add different gradient in every list item
+            Color(0xFF00BCD4),
+            Color(0xFF99ca3d)],
+          imagePath: "assets/images/city_image.png"),
+
+```
+
 
 #### `FlutterAnimatedCards` without passing any color in model class
 This is another way to give colors or gradient to your card. Now you need to add 'cardWithSingleColor' or 'cardWithGradientColors' as shown below
